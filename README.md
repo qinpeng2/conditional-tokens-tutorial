@@ -1,44 +1,49 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# conditional-tokens-tutorial
 
-## Available Scripts
+> Fork of [gnosis/conditional-tokens-tutorial](https://github.com/gnosis/conditional-tokens-tutorial)
+>
+> **📦 本地备份快照** (2026-07-04) — 原路径 `/opt/workspace/playground/ctf/conditional-tokens-tutorial`
 
-In the project directory, you can run:
+## 这是什么
 
-### `yarn start`
+Gnosis **条件代币预测市场** 的前端教程项目（Create React App）。演示如何创建 LMSR 做市市场、配置 outcome、与链上合约交互。
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 本地改动
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+| 文件 | 改动 |
+|------|------|
+| `src/conf/config.local.json` | 本地市场配置（LMSR 地址、市场问题） |
+| `src/conf/config.local.json.bak` | 配置备份 |
+| `markets.config.js` | 市场列表配置 |
+| `.env.example` | 已删除（本地不需要） |
 
-### `yarn test`
+### 配置的市场示例
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- 问题：*"Will the summer 2025 in Germany break again weather records?"*
+- LMSR 地址：`0x01Da9ec913F82a784ba03eC61CdBCf8877Add8cE`
+- 网络：`local`
 
-### `yarn build`
+## 快速开始
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```bash
+yarn install
+yarn start        # 开发服务器
+yarn build        # 生产构建
+```
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+需要本地链或测试网环境，配合 `truffle.js` 部署合约。
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 技术栈
 
-### `yarn eject`
+- React (CRA) + TypeScript
+- Truffle 合约部署
+- Web3.js 链上交互
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## 上游
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+https://github.com/gnosis/conditional-tokens-tutorial
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## 关联项目
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- `qinpeng2/conditional-tokens-market-makers` — AMM 合约 + Python 模拟
+- `qinpeng2/ctf-exchange` — CTF 交易所
