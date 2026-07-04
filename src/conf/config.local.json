@@ -1,10 +1,10 @@
 {
-  "networkId": 1581350973751,
-  "lmsrAddress": "0x98036b9Fca2DdA0e94BC10cdc6Ea6cA0a53B6C0A",
+  "networkId": 1734685029478,
+  "lmsrAddress": "0x01Da9ec913F82a784ba03eC61CdBCf8877Add8cE",
   "markets": [
     {
       "questionId": "0x4b22fe478b95fdaa835ddddf631ab29f12900b62061e0c5fd8564ddb7b684333",
-      "title": "Will the summer 2020 in Germany break again weather records? ",
+      "title": "Will the summer 2025 in Germany break again weather records? ",
       "outcomes": [
         {
           "title": "Yes",
